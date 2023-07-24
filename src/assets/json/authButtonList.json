@@ -1,6 +1,10 @@
 {
   "code": 200,
   "data": {
+    "userList": ["add", "batchAdd", "export", "batchDelete", "status"],
+    "userLevel": ["add", "batchAdd", "export", "batchDelete", "status"],
+    "userTag": ["add", "batchAdd", "export", "batchDelete", "status"],
+    "userPrice": ["add", "batchAdd", "export", "batchDelete", "status"],
     "useProTable": ["add", "batchAdd", "export", "batchDelete", "status"],
     "authButton": ["add", "edit", "delete", "import", "export"]
   },

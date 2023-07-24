@@ -25,7 +25,7 @@ import { User } from "@/api/interface";
 import { useHandleData } from "@/hooks/useHandleData";
 import ProTable from "@/components/ProTable/index.vue";
 import ImportExcel from "@/components/ImportExcel/index.vue";
-import UserDrawer from "@/views/proTable/components/UserDrawer.vue";
+import UserDrawer from "../components/UserDrawer.vue";
 import { ProTableInstance, ColumnProps } from "@/components/ProTable/interface";
 import { EditPen, Refresh } from "@element-plus/icons-vue";
 import { getUserList, editUser, addUser, resetUserPassWord } from "@/api/modules/user";

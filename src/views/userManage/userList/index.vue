@@ -22,9 +22,9 @@
       <template #operation="scope">
         <el-button type="primary" link :icon="View" @click="openDrawer('查看', scope.row)"> 聊天 </el-button>
         <el-button type="primary" link :icon="View" @click="openDrawer('查看', scope.row)"> 禁言 </el-button>
-        <el-button type="primary" link :icon="EditPen" @click="openDrawer('编辑', scope.row)"> 注销 </el-button>
+        <el-button type="primary" link :icon="EditPen" @click="deleteAccount(scope.row)"> 注销 </el-button>
         <el-button type="primary" link :icon="Refresh" @click="resetPass(scope.row)"> 内容清除 </el-button>
-        <el-button type="primary" link :icon="Delete" @click="deleteAccount(scope.row)"> 详情 </el-button>
+        <el-button type="primary" link :icon="Delete" @click="openDrawer('查看', scope.row)"> 详情 </el-button>
       </template>
     </ProTable>
     <UserDrawer ref="drawerRef" />
@@ -41,7 +41,7 @@ import { useDownload } from "@/hooks/useDownload";
 import { ElMessageBox } from "element-plus";
 import ProTable from "@/components/ProTable/index.vue";
 import ImportExcel from "@/components/ImportExcel/index.vue";
-import UserDrawer from "@/views/proTable/components/UserDrawer.vue";
+import UserDrawer from "../components/UserDrawer.vue";
 import { ProTableInstance, ColumnProps } from "@/components/ProTable/interface";
 import { CirclePlus, Delete, EditPen, Download, Upload, View, Refresh } from "@element-plus/icons-vue";
 import {
